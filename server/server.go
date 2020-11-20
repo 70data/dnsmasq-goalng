@@ -11,7 +11,7 @@ import (
 	"github.com/miekg/dns"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/70data/dnsmasq-goalng/cache"
+	"github.com/70data/dnsmasq-golang/cache"
 )
 
 type server struct {

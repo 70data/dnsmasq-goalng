@@ -1,4 +1,4 @@
-module github.com/70data/dnsmasq-goalng
+module github.com/70data/dnsmasq-golang
 
 go 1.14
 

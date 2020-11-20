@@ -1,4 +1,4 @@
-package main // import "github.com/70data/dnsmasq-goalng"
+package main // import "github.com/70data/dnsmasq-golang"
 
 import (
 	"fmt"
@@ -16,10 +16,10 @@ import (
 	"github.com/urfave/cli"
 	"github.com/miekg/dns"
 
-	"github.com/70data/dnsmasq-goalng/hostsfile"
-	"github.com/70data/dnsmasq-goalng/resolvconf"
-	"github.com/70data/dnsmasq-goalng/server"
-	"github.com/70data/dnsmasq-goalng/stats"
+	"github.com/70data/dnsmasq-golang/hostsfile"
+	"github.com/70data/dnsmasq-golang/resolvconf"
+	"github.com/70data/dnsmasq-golang/server"
+	"github.com/70data/dnsmasq-golang/stats"
 )
 
 // set at build time
@@ -41,7 +41,7 @@ func init() {
 func main() {
 	app := cli.NewApp()
 	app.Name = "go-dnsmasq"
-	app.Usage = "Lightweight caching DNS server and forwarder\n   Website: http://github.com/70data/dnsmasq-goalng"
+	app.Usage = "Lightweight caching DNS server and forwarder\n   Website: http://github.com/70data/dnsmasq-golang"
 	app.UsageText = "go-dnsmasq [global options]"
 	app.Version = Version
 	app.Author, app.Email = "", ""

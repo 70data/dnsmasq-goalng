@@ -15,10 +15,10 @@ RUN \
 
 ENV USER root
 
-ADD . /go/src/github.com/70data/dnsmasq-goalng
+ADD . /go/src/github.com/70data/dnsmasq-golang
 
 COPY scripts/upx /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/upx
 
-WORKDIR /go/src/github.com/70data/dnsmasq-goalng
+WORKDIR /go/src/github.com/70data/dnsmasq-golang

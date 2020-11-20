@@ -7,7 +7,7 @@ import (
 	"github.com/rcrowley/go-metrics"
 	"github.com/rcrowley/go-metrics/stathat"
 
-	"github.com/70data/dnsmasq-goalng/server"
+	"github.com/70data/dnsmasq-golang/server"
 )
 
 var (
