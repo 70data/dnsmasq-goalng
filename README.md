@@ -1,14 +1,3 @@
-# go-dnsmasq
-[![Latest Version](https://img.shields.io/github/release/70data/dnsmasq-goalng.svg?maxAge=60)][release]
-[![Github All Releases](https://img.shields.io/github/downloads/70data/dnsmasq-goalng/total.svg?maxAge=86400)]()
-[![Docker Pulls](https://img.shields.io/docker/pulls/70data/dnsmasq-goalng.svg?maxAge=86400)][hub]
-[![License](https://img.shields.io/github/license/70data/dnsmasq-goalng.svg?maxAge=86400)]()
-
-[release]: https://github.com/70data/dnsmasq-goalng/releases
-[hub]: https://hub.docker.com/r/70data/dnsmasq-goalng/
-
-go-dnsmasq is a lightweight (1.2 MB) DNS caching server/forwarder with minimal filesystem and runtime overhead.
-
 ### Application examples:
 
 - Caching DNS server/forwarder in a local network
@@ -79,25 +68,12 @@ Set to your StatHat account email address
 
 #### Run from the command line
 
-Download the binary for your OS from the [releases page](https://github.com/70data/dnsmasq-goalng/releases/latest).    
-
-go-dnsmasq is available in two versions. The minimal version (`go-dnsmasq-min`) has a lower memory footprint but doesn't have caching, stats reporting and systemd support.
-
 ```sh
-   sudo ./go-dnsmasq [options]
+sudo ./go-dnsmasq [options]
 ```
-
-#### Run as a Docker container
-
-Docker Hub trusted builds are [available](https://hub.docker.com/r/70data/dnsmasq-goalng/).
-
-```sh
-docker run -d -p 53:53/udp -p 53:53 70data/dnsmasq-goalng:latest
-```
-
-You can pass go-dnsmasq configuration parameters by setting the corresponding environmental variables with Docker's `-e` flag.
 
 #### Serving A/AAAA records from a hosts file
+
 The `--hostsfile` parameter expects a standard plain text [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) with the only difference being that a wildcard `*` in the left-most label of hostnames is allowed. Wildcard entries will match any subdomain that is not explicitly defined.
 For example, given a hosts file with the following content:
 
